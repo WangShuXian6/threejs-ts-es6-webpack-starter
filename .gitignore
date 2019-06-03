@@ -1,4 +1,5 @@
 node_modules/
+.awcache
 
 /build/*
 # unignore the favicon
