@@ -15,6 +15,10 @@ const APP_NAME = "Three.js ES6 Webpack 4 Project Starter";
 
 const rules = [
   {
+    test: /\.ts$/,
+    use: 'awesome-typescript-loader'
+  },
+  {
     test: /\.(js|jsx)$/,
     include: [path.join(__dirname, "src", "js")],
     exclude: [path.join(__dirname, "node_modules")],
@@ -193,8 +197,8 @@ module.exports = (env, argv) => {
     devServer,
     devtool: isProduction ? "source-map" : "cheap-source-map",
     entry: {
-      aboutPage: "./src/js/about.js",
-      homePage: "./src/js/index.js",
+      aboutPage: "./src/js/about.ts",
+      homePage: "./src/js/index.ts",
     },
     module: {
       rules,

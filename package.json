@@ -5,7 +5,7 @@
   "homepage": "https://jackdbd.github.io/threejs-es6-webpack-starter",
   "repository": "git@github.com:jackdbd/threejs-es6-webpack-starter.git",
   "version": "5.0.0",
-  "main": "./src/js/index.js",
+  "main": "./src/js/index.ts",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -28,7 +28,8 @@
   "dependencies": {
     "orbit-controls-es6": "2.0.0",
     "three": "0.102.1",
-    "three.interaction": "0.2.2"
+    "three.interaction": "0.2.2",
+    "@types/three": "latest"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
@@ -59,7 +60,9 @@
     "webpack-bundle-analyzer": "3.1.0",
     "webpack-cli": "3.2.3",
     "webpack-dev-server": "3.2.1",
-    "webpack-glsl-loader": "1.0.1"
+    "webpack-glsl-loader": "1.0.1",
+    "typescript": "latest",
+    "awesome-typescript-loader": "latest"
   },
   "keywords": [
     "babel",
